@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ludwig Sackey Narh — Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-view="human">
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Ludwig Sackey Narh</h1>
+      <p>Frontend Developer • JavaScript • React</p>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#build-log">Build Log</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="modeToggle" class="btn">Hiring Manager Mode</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h2 class="human-only">I build clean, fast, accessible web apps.</h2>
+      <h2 class="hm-only">Results: fast loads, readable code, shipped features.</h2>
+
+      <ul class="metrics">
+        <li><strong>Perf</strong>: <span>90+ Lighthouse</span></li>
+        <li><strong>DX</strong>: <span>Semantic HTML, a11y</span></li>
+        <li><strong>Stack</strong>: <span>HTML • CSS • JS • React</span></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p class="human-only">
+        I’m a frontend developer focused on turning ideas into simple, reliable interfaces.
+        I enjoy performance, accessibility, and thoughtful design.
+      </p>
+      <ul class="hm-only compact">
+        <li>Strengths: JS fundamentals, DOM, API work</li>
+        <li>Values: clarity, small PRs, testable code</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h3>Projects</h3>
+
+      <article class="project card">
+        <img src="images/guess-my-number.PNG" alt="screenshot guess-my-number" class="project-img" />
+
+        <div class="project-body">
+          <header class="project-header">
+            <h4>Guess My Number</h4>
+            <div class="tags">
+              <span>JS</span><span>Fetch API</span><span>Accessibility</span>
+            </div>
+          </header>
+
+          <!-- Human story -->
+          <p class="human-only">
+            "Guess My Number" is a simple game built with vanilla JavaScript that demonstrates core programming skills like DOM manipulation, event handling, state management, and user interaction.
+          </p>
+
+          <!-- Hiring Manager summary -->
+          <ul class="hm-only compact">
+            <li>Built with vanilla JS + Fetch</li>
+            <li>Debounced search, error states</li>
+            <li>Keyboard + screen reader friendly</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="btn" href="https://guess-my-number-steel-nine.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn secondary" href="https://github.com/TheNarh" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <!-- Impact strip -->
+          <ul class="impact compact">
+            <li><strong>TTI:</strong> &lt; 2s</li>
+            <li><strong>Bundle:</strong> ~30KB</li>
+            <li><strong>Core Web Vitals:</strong> Good</li>
+          </ul>
+        </div>
+      </article>
+
+       <article class="project card">
+        <img src="assets/project-placeholder.jpg" alt="Project screenshot" class="project-img" />
+
+        <div class="project-body">
+          <header class="project-header">
+            <h4>Movie Database</h4>
+            <div class="tags">
+              <span>JS</span><span>Fetch API</span><span>Accessibility</span>
+            </div>
+          </header>
+
+          <!-- Human story -->
+          <p class="human-only">
+            Search movies, view details, and manage a watchlist. I focused on clean state handling
+            and keyboard navigation.
+          </p>
+
+          <!-- Hiring Manager summary -->
+          <ul class="hm-only compact">
+            <li>Built with vanilla JS + Fetch</li>
+            <li>Debounced search, error states</li>
+            <li>Keyboard + screen reader friendly</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="btn" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn secondary" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <!-- Impact strip -->
+          <ul class="impact compact">
+            <li><strong>TTI:</strong> &lt; 2s</li>
+            <li><strong>Bundle:</strong> ~30KB</li>
+            <li><strong>Core Web Vitals:</strong> Good</li>
+          </ul>
+        </div>
+      </article>
+
+       <article class="project card">
+        <img src="assets/project-placeholder.jpg" alt="Project screenshot" class="project-img" />
+
+        <div class="project-body">
+          <header class="project-header">
+            <h4>Movie Database</h4>
+            <div class="tags">
+              <span>JS</span><span>Fetch API</span><span>Accessibility</span>
+            </div>
+          </header>
+
+          <!-- Human story -->
+          <p class="human-only">
+            Search movies, view details, and manage a watchlist. I focused on clean state handling
+            and keyboard navigation.
+          </p>
+
+          <!-- Hiring Manager summary -->
+          <ul class="hm-only compact">
+            <li>Built with vanilla JS + Fetch</li>
+            <li>Debounced search, error states</li>
+            <li>Keyboard + screen reader friendly</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="btn" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn secondary" href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <!-- Impact strip -->
+          <ul class="impact compact">
+            <li><strong>TTI:</strong> &lt; 2s</li>
+            <li><strong>Bundle:</strong> ~30KB</li>
+            <li><strong>Core Web Vitals:</strong> Good</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Add your other projects similarly (e.g., Income Tracker, DJ Mixes app) -->
+    </section>
+
+    <!-- BUILD LOG (this is uncommon & stands out) -->
+    <section id="build-log" class="card">
+      <h3>Build Log</h3>
+      <ul class="log">
+        <li><time>2025-08-19</time> Added “Hiring Manager Mode” toggle + base layout</li>
+        <li><time>2025-08-19</time> Set up accessible nav + skip link</li>
+      </ul>
+      <p class="tip">Short, honest notes showing iteration beat “perfect” pages.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourprofile" target="_blank" rel="noopener">yourprofile</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Ludwig Sackey Narh — Made with vanilla HTML/CSS/JS</small>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
