@@ -65,6 +65,19 @@ body{
     font-size:.95rem;
 }
 
+#typing {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0077ff;
+  border-right: 3px solid #0077ff; 
+  overflow: hidden;
+  display: inline-block;
+  white-space: normal; 
+  word-wrap: break-word; 
+  max-width: 90%; 
+}
+
+
 .site-nav a{
   color:var(--muted);
   text-decoration:none;

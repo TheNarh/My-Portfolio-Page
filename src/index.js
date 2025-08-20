@@ -1,3 +1,16 @@
+const text = `Hi, I'm Ludwig — a Frontend Developer 🚀 focused on turning ideas into simple, reliable interfaces. 
+I enjoy performance, accessibility and thoughtful design.`;
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 35); // this sets the typing speed
+    }
+  }
+  typeWriter();
+
 const body = document.body;
 const btn = document.getElementById('modeToggle');
 const YEAR = document.getElementById('year');
