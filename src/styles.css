@@ -72,9 +72,20 @@ body{
   border-right: 3px solid #0077ff; 
   overflow: hidden;
   display: inline-block;
-  white-space: normal; 
-  word-wrap: break-word; 
-  max-width: 90%; 
+  white-space: normal;   
+  word-wrap: break-word;
+  max-width: 90%;
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCursor {
+  0% { border-color: #0077ff; }
+  50% { border-color: transparent; }
+  100% { border-color: #0077ff; }
+}
+
+#typing {
+  animation: blinkCursor 0.7s step-end infinite;
 }
 
 
