@@ -25,15 +25,17 @@ const texts = [
       charIndex++;
       setTimeout(typeWriter, 100); // typing speed
     } else {
-      // Finish this line, remove cursor
-      document.getElementById("line-" + textIndex).classList.remove("line");
+      // Finish this line, remove cursor, add fade effect
+      const finishedLine = document.getElementById("line-" + textIndex);
+      finishedLine.classList.remove("line");
+      finishedLine.classList.add("fade-in");
 
       // Move to next text
       textIndex++;
       charIndex = 0;
 
       if (textIndex < texts.length) {
-        setTimeout(typeWriter, 500); // pause before new line
+        setTimeout(typeWriter, 600); // pause before new line
       }
     }
   }
