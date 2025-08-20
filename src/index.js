@@ -1,15 +1,44 @@
-const text = `Hi, I'm Ludwig — a Frontend Developer 🚀 focused on turning ideas into simple, reliable interfaces. 
-I enjoy performance, accessibility and thoughtful design.`;
-  let i = 0;
+const texts = [
+    "Hi, I'm Ludwig 👋",
+    "Web Developer 💻",
+    "Problem Solver 🧩",
+    "Mentor & Learner 🚀"
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
 
   function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typing").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, 35); // this sets the typing speed
+    const typingEl = document.getElementById("typing");
+
+    if (charIndex < texts[textIndex].length) {
+      // Create or update the current line
+      if (!document.getElementById("line-" + textIndex)) {
+        const newLine = document.createElement("div");
+        newLine.id = "line-" + textIndex;
+        newLine.className = "line";
+        typingEl.appendChild(newLine);
+      }
+      const currentLine = document.getElementById("line-" + textIndex);
+      currentLine.textContent = texts[textIndex].substring(0, charIndex + 1);
+
+      charIndex++;
+      setTimeout(typeWriter, 100); // typing speed
+    } else {
+      // Finish this line, remove cursor
+      document.getElementById("line-" + textIndex).classList.remove("line");
+
+      // Move to next text
+      textIndex++;
+      charIndex = 0;
+
+      if (textIndex < texts.length) {
+        setTimeout(typeWriter, 500); // pause before new line
+      }
     }
   }
-  typeWriter();
+
+  window.onload = typeWriter;
 
 const body = document.body;
 const btn = document.getElementById('modeToggle');
